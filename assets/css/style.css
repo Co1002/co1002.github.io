@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Consolas;
+    src: url(assets/fonts/consolas.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: Consolas, sans-serif;
+}
