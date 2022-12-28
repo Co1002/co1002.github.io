@@ -20,6 +20,19 @@ body{
     font-family: Consolas, sans-serif;
 }
 
+.primary{
+    color: #ffa801;
+}
+
+.primary-link{
+    color: #ffa801;
+    text-decoration: none;
+}
+
+.primary-link:hover{
+    color: #d2dae2;
+}
+
 /* Section 1 - Header */
 
 .sec-header{
@@ -101,16 +114,14 @@ body{
     align-items: center;
     justify-content: center;
     display: flex;
+    position: relative;
 }
 
 .about-text{
     color: #d2dae2;
     font-size: 30px;
     max-width: 600px;
-}
-
-.primary{
-    color: #ffa801;
+    position: relative;
 }
 
 .about-img{
@@ -118,4 +129,12 @@ body{
     max-width: 400px;
     padding: 100px 30px;
     margin: 0 auto;
+}
+
+/* Section 3 - Education */
+
+.sec-education{
+    width: 100%;
+    background: #485460;
+    padding: 70px 50px;
 }
