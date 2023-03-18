@@ -9,9 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colin Djerdak</title>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-utilities.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -19,11 +18,11 @@
     <section class="sec-header">
         <div class="header-text">
             <h3 class="header-h3">Hi, I am</h3>
-            <h1 class="header-h1">Colin Djerdak</h1>
+            <h1 class="header-h1" id="nameType"></h1>
             <h4 class="header-h4">student & web developer</h4>
         </div>
         <p class="arrow-down">
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-chevron-down" style="color: #ffa801;"></i>
         </p>
     </section>
 
@@ -31,14 +30,14 @@
         <div class="section-heading">
             <h1>About me</h1>
         </div>
-        <div class="pure-g">
-            <div class="pure-u-md-3-5 center-vertical">
+        <div class="row">
+            <div class="col-lg-7 center-vertical">
                 <p class="about-text">Hey guys,<br>
                 my name is Colin Djerdak, student and web developer from Germany.<br>
                 My motto: <span class="primary">Just try it!</span>
                 </p>
             </div>
-            <div class="pure-u-md-2-5">
+            <div class="col-lg-5">
                 <img src="/assets/images/me-round.png" class="about-img">
             </div>
         </div>
@@ -46,8 +45,41 @@
 
     <section class="sec-education">
         <div class="section-heading">
-            <h1>Education</h1>
+            <h1>Projects</h1>
         </div>
+        <div class="row g-5">
+            <div class="col">
+                <h2 class="mb-2">CDesigns <span class="primary">// Feb 2020</span></h2>
+                <p>With CDesigns I established my own design company with a focus on esport. Midwhile CDesigns is not only a design company, also my creator name as software engineer. Check out CDesigns <a href="https://instagram.com/cdesigns06">here</a>.</p>
+            </div>
+            <div class="col">
+                <h2 class="mb-2">Rolling Cube <span class="primary">// Jun 2020</span></h2>
+                <p>Rolling cube was an simple mobile game, developed with the game engine Unity in C#. <br>The development is midwhile stopped, due to having not enough time.</p>
+            </div>
+            <div class="col">
+                <h2 class="mb-2">Bandenkick <span class="primary">// Mar 2021</span></h2>
+                <p>My father's company  Bandenkick provides an virtual esport league for the football game FIFA. The website for this project was made by myself with every small function. Check out Bandenick <a href="https://bandenkick.de">here</a>.</p>
+            </div>
+        </div>
+        
     </section>
+
+    <footer>
+        <p>&#169; 2023 - CDesigns</p>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script>
+
+        new TypeIt("#nameType", {
+            strings: "Colin Djerdak.",
+            speed: 50,
+            waitUntilVisible: true,
+            cursor: false
+          }).go();
+
+    </script>
 </body>
 </html>
